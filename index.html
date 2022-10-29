@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<!-- установить язык страницы -->
+<html lang="uk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebStudio</title>
+  <!-- подключение шрифтов -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet">
+  <!-- нормализатор modern-normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- подключение стилей -->
+  <link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+    <div class="container">
+
+      <a class="logo link" href="./index.html" lang="en">
+        <span class="accent-color">Web</span><span class="secondary-color">Studio</span></a>
+
+      <nav>
+        <ul class="site-nav list">
+          <li class="item"><a class="link current" href="">Студія</a></li>
+          <li class="item"><a class="link" href="./portfolio.html">Портфоліо</a></li>
+          <li class="item"><a class="link" href="">Контакти</a></li>
+        </ul>
+      </nav>
+
+      <ul class="contact list">
+        <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+        <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- hero -->
+    <section class="section hero">
+      <div class="container">
+        <h1 class="title">Ефективні рішення для<br>вашого бізнесу</h1>
+
+        <button class="button" type="button">Замовити послугу</button>
+      </div>
+    </section>
+
+    <!-- features -->
+    <section class="section features">
+      <div class="container">
+        <h2 class="visually-hidden">Особлівості студії</h2>
+
+        <ul class="list">
+          <li class="item">
+            <h3 class="title">УВАГА ДО ДЕТАЛЕЙ</h3>
+            <p class="text">Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.</p>
+          </li>
+
+          <li class="item">
+            <h3 class="title">ПУНКТУАЛЬНІСТЬ</h3>
+            <p class="text">Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.</p>
+          </li>
+
+          <li class="item">
+            <h3 class="title">ПЛАНУВАННЯ</h3>
+            <p class="text">Так само консультація з широким активом значною мірою зумовлює.</p>
+          </li>
+
+          <li class="item">
+            <h3 class="title">СУЧАСНІ ТЕХНОЛОГІЇ</h3>
+            <p class="text">Значимість цих проблем настільки очевидна, що реалізація планових завдань.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section class="section services">
+      <div class="container">
+        <h2 class="title">Чим ми займаємося</h2>
+
+        <ul class="list">
+
+          <li class="item">
+            <a href="#">
+              <img class="image" src="./images/box-1.jpg"
+                alt="Робочий стіл на якому стоїть монітор, планшет, руки людини набирають текст на клавіатурі, поряд лист бумаги з схемою"
+                width="370">
+            </a>
+          </li>
+
+          <li class="item">
+            <a href="#">
+              <img class="image" src="./images/box-2.jpg"
+                alt="Руки держать мобільний телефон, на єкрані ноутбука зображено 3 мобільних телефона" width="370">
+            </a>
+          </li>
+
+          <li class="item">
+            <a href="#">
+              <img class="image" src="./images/box-3.jpg"
+                alt="Руки держать планшет, на якому зображено кольорову фігуру" width="370">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- staff -->
+    <section class="section staff">
+      <div class="container">
+
+        <h2 class="title">Наша команда</h2>
+
+        <ul class="list">
+          <li class="item">
+            <img class="image" src="./images/img-1.jpg" alt="Зображення Ігора Дем'яненка" width="270">
+            <div class="description">
+              <h3 class="name">Ігор Дем'яненко</h3>
+              <p class="text" lang="en">Product Designer</p>
+            </div>
+          </li>
+
+          <li class="item">
+            <img class="image" src="./images/img-2.jpg" alt="Зображення Ольги Рєпіної" width="270">
+            <div class="description">
+              <h3 class="name">Ольга Рєпіна</h3>
+              <p class="text" lang="en">Frontend Developer</p>
+            </div>
+          </li>
+
+          <li class="item">
+            <img class="image" src="./images/img-3.jpg" alt="Зображення Миколи Тарасова" width="270">
+            <div class="description">
+              <h3 class="name">Микола Тарасов</h3>
+              <p class="text" lang="en">Marketing</p>
+            </div>
+          </li>
+
+          <li class="item">
+            <img class="image" src="./images/img-4.jpg" alt="Зображення Михайла Єрмакова" width="270">
+            <div class="description">
+              <h3 class="name">Михайло Єрмаков</h3>
+              <p class="text" lang="en">UI Designer</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+
+      <a class="logo link" href="./index.html" lang="en">
+        <span class="accent-color">Web</span><span class="secondary-color">Studio</span></a>
+
+      <address>
+        <ul class="contact list">
+          <li class="item address">м. Київ, пр-т Лесі Українки, 26</li>
+          <li class="item"><a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="item"><a class="link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+        </ul>
+      </address>
+    </div>
+  </footer>
+</body>
+
+</html>
