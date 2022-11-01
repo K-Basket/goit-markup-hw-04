@@ -172,6 +172,8 @@ h3,
 /* hero */
 
 .hero {
+  max-width: 1600px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
 
@@ -244,7 +246,6 @@ h3,
   align-items: center;
 
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
 
   background-color: var(--bg-tertiary-color);
@@ -327,6 +328,7 @@ h3,
 
 .staff .description {
   padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .title-staff {
@@ -342,6 +344,7 @@ h3,
 }
 
 .text-staff {
+  margin-bottom: 16px;
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
@@ -349,8 +352,6 @@ h3,
 }
 
 .socials {
-  margin-bottom: 30px;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -373,7 +374,9 @@ h3,
 }
 
 .link-socials:hover,
-.link-socials.footer-socials:hover {
+.link-socials:focus,
+.link-socials.footer-socials:hover,
+.link-socials.footer-socials:focus {
   background-color: var(--accent-color);
   fill: var(--white-color);
 }
@@ -401,9 +404,7 @@ h3,
 }
 
 .link-customers {
-  padding: 16px 32px;
-  width: 170px;
-  height: 92px;
+  padding: 16px 30px;
 
   display: block;
 
@@ -417,7 +418,8 @@ h3,
   fill: currentColor;
 }
 
-.link-customers:hover {
+.link-customers:hover,
+.link-customers:focus {
   color: var(--accent-color);
   fill: var(--accent-color);
 }
@@ -480,7 +482,10 @@ h3,
   border: 1px solid #EEEEEE;
 }
 
-.item-activities:hover {
+.link-activities:hover {
+  /* тень работает только на блочных элементах
+  поэтому добавлен display block */
+  display: block;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -490,7 +495,8 @@ h3,
   color: var(--text-secondary-color);
 }
 
-.description {
+.link-activities .description {
+  min-width: 370px;
   padding: 20px 24px;
 }
 
@@ -506,6 +512,7 @@ h3,
 }
 
 .text-activities {
+  margin: 0;
   color: var(--text-main-color);
   font-size: 16px;
   line-height: 1.9;
